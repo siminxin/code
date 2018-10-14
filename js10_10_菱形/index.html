@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="index.css">-->
+    <style>
+        body{
+            width: 200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<script language="JavaScript">
+
+    var bian = prompt('请输入边长数');
+
+    for( var i = 1 ; i<= bian ; i++){
+        for(var j = 1 ; j<= bian ; j++ ){
+            document.write('<img src="img/1.jpg" alt="@">');        //""和‘’没有差别
+        }
+        document.write('<br>');   //document.write 是输出 html 所以这里的换行应该是<br>
+    }
+</script>
+</body>
+</html>

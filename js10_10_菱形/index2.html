@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<script language="JavaScript">
+    document.writeln("打印菱形</br>");
+    var c = "&nbsp;@";
+    for(var i=0;i<4;i++){
+        for(var j=3;j>i;j--){
+            document.writeln("&nbsp");
+        }
+        for(var k=0;k<i+1;k++){
+            document.writeln("&nbsp;<img src=\"img/1.jpg\" alt=\"@\">");
+        }
+        document.writeln("</br>");
+    }
+
+    for(var i=3;i>0;i--){
+        for(var j=3;j>=i;j--){
+            document.writeln("&nbsp");
+        }
+        for(var k=0;k<=i-1;k++){
+            document.writeln("&nbsp;<img src=\"img/1.jpg\" alt=\"@\">");
+        }
+        document.writeln("</br>")
+    }
+  /* document.writeln("打印菱形</br>");
+   var c = "&nbsp;@";
+   var n3 = "&nbsp;&nbsp;&nbsp;";
+   var n2 = "&nbsp;&nbsp;";
+   var n1 = "&nbsp;";
+   document.writeln(n3,c+"<br>");
+   document.writeln(n2,c,c+"<br>");
+   document.writeln(n1,c,c,c+"<br>");
+   document.writeln(c,c,c,c+"<br>");
+   document.writeln(n1,c,c,c+"<br>");
+   document.writeln(n2,c,c+"<br>");
+   document.writeln(n3,c+"<br>");*/
+</script>
+</body>
+</html>
