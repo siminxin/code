@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <script language="JavaScript">
+
+        document.write("<table border='1'>" );
+        var han = prompt('请输入行数');
+        var lie = prompt('请输入列数');
+        for( var i = 1 ; i<= han ; i++){
+            //偶数行
+            if( i%2 == 0 ){
+                document.write("<tr class='bs'>");
+            }else {
+                document.write("<tr>");
+            }
+
+            for(var j = 1 ; j<= lie ; j++ ){
+                document.write('<td>'+i+"行"+j+"列</td>");        //""和‘’没有差别
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</body>
+</html>
